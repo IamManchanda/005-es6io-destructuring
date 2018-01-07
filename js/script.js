@@ -2,36 +2,13 @@
  * JS
  */
 
-const harry = {
-  firstName: 'Harry',
-  lastName: 'Manchanda',
-  links: {
-    social: {
-      twitter: 'https://twitter.com/harmanmanchanda',
-      facebook: 'https://www.facebook.com/IamManchanda',
-      linkedin: 'https://www.linkedin.com/in/harrymanchanda/',
-      github: 'https://github.com/IamManchanda',
-      gplus: 'https://plus.google.com/+HarryManchanda'
-    },
-    web: {
-      site: 'http://harry.zone/',
-      blog: [
-        'https://tech.io/users/2195783/IamManchanda', 
-        'https://codeburst.io/@harry.dev', 
-        'https://scotch.io/@IamManchanda'
-      ],
-    }
-  },
-};
+const details = ['Harry Manchanda', 123, 'harry.zone'];
+const [name, id, website] = details;
 
-const {twitter, facebook: fb, linkedin, github, gplus} = harry.links.social;
+const data = 'Basketball,Sports,90210,23,wes,bos,cool';
 
-const settings = {
-  width: 300,
-  color: 'Black',
-};
+const [itemName, category, sku, inventory] = data.split(',');
+console.log(itemName, category, sku, inventory);
 
-const {width = 100, height = 100, color = 'Blue', fontSize = 25} = settings;
-
-// const { w: width = 400, h: height = 500 } = { w: 800 }
-
+const team = ['Wes', 'Harry', 'Sarah', 'Keegan', 'Riker'];
+const [captain, assistant, ...players] = team;
